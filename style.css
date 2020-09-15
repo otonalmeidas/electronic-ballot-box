@@ -5,3 +5,95 @@ body {
     align-items: center;
     font-family: sans-serif;
 }
+.urn {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+.screen {
+    width: 500px;
+    height: 331px;
+    background: linear-gradient(to right, #E8E8E8, #CCC);
+    border: 2px solid #999;
+    border-radius: 6px;
+}
+.key {
+    background-color: #222;
+    margin-left: 30px;
+    padding: 17px 6px;
+    border-radius: 6px;
+}
+.number--line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.other--line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.key--button {
+    margin: 10px;
+    width: 55px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(20, 20, 20), #141414);
+    box-shadow: 3px 3px 0px #000;
+    font-size: 22px;
+    color: #FFF;
+    align-items: center;
+    padding-left: 15px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn--white {
+    margin: 5px 12px 2px 12px;
+    width: 85px;
+    height: 40px;
+    background: linear-gradient(to right, #FFF, #EEE);
+    box-shadow: 4px 4px 0px #111;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    align-items: flex-start;
+    padding: 2px 3px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn--corrects {
+    margin: 5px 12px 2px 12px;
+    width: 85px;
+    height: 40px;
+    background: linear-gradient(to right, #e78032, #e78942);
+    box-shadow: 4px 4px 0px #111;
+    font-size: 17px;
+    font-weight: bold;
+    color: #111;
+    align-items: flex-start;
+    padding: 2px 3px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn--confirm {
+    margin: 5px 12px 2px 12px;
+    width: 85px;
+    height: 49px;
+    background: linear-gradient(to right, #2dac62, #3cb66f);
+    box-shadow: 4px 4px 0px #111;
+    font-size: 20px;
+    font-weight: bolder;
+    font-stretch: extra-condensed;
+    color: #222;
+    align-items: flex-start;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
