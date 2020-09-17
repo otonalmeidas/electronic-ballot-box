@@ -1,14 +1,20 @@
+@keyframes pisca {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .urn {
     background-color: #dbd5c9;
     padding: 30px;
     display: flex;
+    border-radius: 5px;
 }
 .screen {
     width: 500px;
@@ -16,6 +22,8 @@ body {
     background: linear-gradient(to right, #E8E8E8, #CCC);
     border: 2px solid #999;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
 }
 .key {
     background-color: #222;
@@ -56,7 +64,7 @@ body {
     box-shadow: 4px 4px 0px #111;
     font-size: 17px;
     font-weight: bold;
-    color: #333;
+    color: #444;
     align-items: flex-start;
     padding: 2px 3px;
     display: flex;
@@ -68,11 +76,11 @@ body {
     margin: 5px 12px 2px 12px;
     width: 85px;
     height: 40px;
-    background: linear-gradient(to right, #e78032, #e78942);
+    background: linear-gradient(to right, #ec8638, #e78942);
     box-shadow: 4px 4px 0px #111;
     font-size: 17px;
     font-weight: bold;
-    color: #111;
+    color: #222;
     align-items: flex-start;
     padding: 2px 3px;
     display: flex;
@@ -86,7 +94,7 @@ body {
     height: 49px;
     background: linear-gradient(to right, #2dac62, #3cb66f);
     box-shadow: 4px 4px 0px #111;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bolder;
     font-stretch: extra-condensed;
     color: #222;
@@ -96,4 +104,76 @@ body {
     justify-content: center;
     cursor: pointer;
     border-radius: 4px;
+}
+
+
+
+.first-division {
+    flex: 1;
+    display: flex;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.text {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.candidate {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.digits {
+    height: 75px;
+}
+.resume {
+    flex: 1;
+    line-height: 25px;
+}
+.numero {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 53px;
+    font-size: 22px;
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.right {
+    width: 90px;
+    padding: 15px 10px 0px 0px;
+}
+.images {
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+.images img {
+    width: 85%;
+    border: 1px solid #000;
+}
+
+
+
+.second-division {
+    height: 50px;
+    font-size: 7px;
+    border-top: 2px solid #999;
+    padding: 2px 18px;
 }
